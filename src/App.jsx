@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { OPTIONS_FORM, TOTAL_POINTS } from './assets/js/constants'
 import Form from './components/Form';
@@ -14,12 +14,13 @@ function App() {
   const [porcentaje, setPorcentaje] = useState(0);
 
 
+  useEffect(() => {
+    setPorcentaje((contador * 100) / TOTAL_POINTS);
+  }, [contador]);
+
   const calcularPorcentaje = (dato, suma) => {
     setDatoSeleccionado(dato);
     setContador(contador + suma);
-    setContador(contador + suma);
-    setPorcentaje((contador * 100) / TOTAL_POINTS);
-    setPorcentaje((contador * 100) / TOTAL_POINTS);
   }
 
 
