@@ -1,0 +1,13 @@
+.Description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
+
+
+@media (min-width:1000px) {
+    .Description{
+        width: 70%;
+    }
+}

@@ -1,0 +1,20 @@
+.video{
+    width: 100%;
+    height: 400px;
+}
+
+.VideoView{
+    padding: 0px;
+    background-color: #000000 !important;
+}
+
+@media (min-width:1000px) {
+    .VideoView{
+        width: 100%;
+        padding: 0;
+    }
+    .Video{
+        width: 100%;
+        height: 300px;
+    }
+}

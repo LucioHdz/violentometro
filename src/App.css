@@ -1,0 +1,12 @@
+
+@media (min-width:1000px) {
+    .responsive-container{
+        display: flex;
+    }
+    .description-area{
+        width:67%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+

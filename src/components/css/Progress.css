@@ -1,0 +1,27 @@
+.Progress{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Progress-green{
+    background-color: var(--normal-color) !important;
+}
+.Progress-orange{
+    background-color: var(--precaution-color) !important;
+}
+.Progress-red{
+    background-color: var(--warning-color) !important;
+}
+
+
+@media (min-width:1000px) {
+    .Progress{
+        width: 20%;
+        height: 250px;
+    }
+}
